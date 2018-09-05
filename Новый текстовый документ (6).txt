@@ -1,0 +1,11 @@
+mount d d:\\tasm
+
+d:
+
+cd \bin
+
+tasm.exe asmKod.asm
+
+tlink.exe ASMKOD.obj
+
+ASMKOD.EXE

@@ -1,0 +1,47 @@
+﻿program prg; // Вариант
+var int x, y, a, b, c;
+    int mas[10], i;
+    char s[2];
+endvar;
+begin
+    i=0;
+    repeat
+        write('Enter char: ');
+        readln(s[i]);
+        i=i+1;
+    until [i < 3];
+    write('Enter x: ');
+    readln(x);
+    write('Enter y: ');
+    readln(y);
+    mas[x-2]=4*y-3*(y+2);
+    c=mas[x-2];
+    if [x<y] and [y>=5] then
+        a=2*(x+y)
+    else
+        a=10*x;
+    if ([x != 2] or true) then
+    begin
+        b=x-c;
+        writeln('b = ', b);
+    end;
+    x=0;
+    while ([x < 45])
+    begin
+        x=x+5;
+        y=(y+2)*2;
+    end;
+    writeln('y = ', y);
+    writeln('a = ', a);
+    writeln('x = ', x);
+    repeat
+        x=x-x/4;
+        writeln('x= ', x);
+    until [x > 25];
+    i=0;
+    writeln('You enter char: ');
+    repeat
+        writeln('',s[i]);
+        i=i+1;
+    until [i < 3];
+end.
